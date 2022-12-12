@@ -51,7 +51,7 @@ if len(text_input) >= 1:
     if text_input == '2023':
         # st.write("You got a gift NO.01")
         st.markdown(
-            '<p class="medium-font-font">You got a gift <strong style="color:red">NUMBER 01</strong> from lovely Santa</p>'
+            '<p class="medium-font-font">You got a gift <strong style="color:blue">NUMBER 02</strong> from lovely Santa</p>'
             , unsafe_allow_html=True)
         st.image("santa.gif")
     if text_input != '2023':
