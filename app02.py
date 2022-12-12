@@ -6,16 +6,13 @@ import streamlit as st
 # import streamlit as st
 # st.write("Here goes your normal Streamlit app...")
 # st.button("Click me")
-
-import streamlit as st
-
 st.markdown("""
 <style>
 .big-font {
     font-size:25px !important;
 }
 .medium-font {
-    font-size:20px !important;
+    font-size:23px !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -51,11 +48,15 @@ if len(text_input) >= 1:
     if text_input == '2023':
         # st.write("You got a gift NO.01")
         st.markdown(
-            '<p class="medium-font-font">You got a gift <strong style="color:blue">NUMBER 02</strong> from lovely Santa</p>'
+            '<p class="medium-font-font">You got a gift <strong style="color:red"> -> No. 02 <- </strong> from lovely Santa...</p>'
             , unsafe_allow_html=True)
+        st.write('"May all that is beautiful, meaningful and brings you joy be yours this holiday season and throughout the coming year!"')
         st.image("santa.gif")
     if text_input != '2023':
-        st.write("🙄 You are not TECHNOLOGY DEPARTMENT !!!")
+        st.markdown(
+            '<p class="medium-font-font"><strong style="color:red">INCORRECT !!!!!</strong></p>'
+            , unsafe_allow_html=True)
+        st.write("🙄 You are not in TECHNOLOGY DEPARTMENT !!!")
         st.write("Try again ?")
     
 elif len(text_input) <= 1:

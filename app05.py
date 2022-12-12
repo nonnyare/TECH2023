@@ -48,9 +48,9 @@ if len(text_input) >= 1:
     if text_input == '2023':
         # st.write("You got a gift NO.01")
         st.markdown(
-            '<p class="medium-font-font">You got a gift <strong style="color:red"> -> No. 01 <- </strong> from lovely Santa...</p>'
+            '<p class="medium-font-font">You got a gift <strong style="color:red"> -> No. 05 <- </strong> from lovely Santa...</p>'
             , unsafe_allow_html=True)
-        st.write('"I hope the magic of Christmas fills every corner of your heart and home with joy — now and always."')
+        st.write('"Best wishes for a joyous Christmas filled with love, happiness and prosperity!"')
         st.image("santa.gif")
     if text_input != '2023':
         st.markdown(
