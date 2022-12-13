@@ -1,11 +1,5 @@
 import streamlit as st
-# st.write("You got gift Number 3")
-# streamlit_app.py
-# streamlit_app.py
 
-# import streamlit as st
-# st.write("Here goes your normal Streamlit app...")
-# st.button("Click me")
 st.markdown("""
 <style>
 .big-font {
@@ -18,26 +12,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown('<p class="big-font">Enter The Secret Password 👇</p>', unsafe_allow_html=True)
 
-# Store the initial value of widgets in session state
-# if "visibility" not in st.session_state:
-#     st.session_state.visibility = "visible"
-#     st.session_state.disabled = False
-
-# col1, col2 = st.columns(2)
-
-# with col1:
-#     # st.checkbox("Disable text input widget", key="disabled")
-#     # st.radio(
-#     #     "Set text input label visibility 👉",
-#     #     key="visibility",
-#     #     options=["visible", "hidden", "collapsed"],
-#     # )
-#     st.text_input(
-#         "Placeholder for the other text input widget",
-#         "This is a placeholder",
-#         key="placeholder",
-    # )
-# with col2:
 text_input = st.text_input(
     "🎄🦌🎁🎉🎊🥳",)
 #     label_visibility=st.session_state.visibility,
@@ -48,7 +22,7 @@ if len(text_input) >= 1:
     if text_input == '2023':
         # st.write("You got a gift NO.01")
         st.markdown(
-            '<p class="medium-font-font">You got <strong style="color:orange"> ->THE SPECIAL GIFT <- </strong> from lovely Santa...</p>'
+            '<p class="medium-font-font"><strong style="color:orange"> Yeah !!! </strong> You got <strong style="color:orange"> THE SPECIAL GIFT </strong> from lovely Santa...</p>'
             , unsafe_allow_html=True)
         st.write('I hope you will get the greatest gift, Good luck !')
         st.image("fireworks.gif")
