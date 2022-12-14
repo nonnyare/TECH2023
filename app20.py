@@ -45,14 +45,14 @@ text_input = st.text_input(
 #     placeholder=st.session_state.placeholder,
 # )
 if len(text_input) >= 1:
-    if text_input == '2023':
+    if text_input == 'tech2023':
         # st.write("You got a gift NO.01")
         st.markdown(
             '<p class="medium-font-font">You got a gift <strong style="color:red"> -> No. 20 <- </strong> from lovely Santa...</p>'
             , unsafe_allow_html=True)
         st.write('"May the good times and treasures of the present become the golden memories of tomorrow. Wishing you lots of love, joy, and happiness. Merry Christmas!"')
         st.image("santa.gif")
-    if text_input != '2023':
+    if text_input != 'tech2023':
         st.markdown(
             '<p class="medium-font-font"><strong style="color:red">INCORRECT !!!!!</strong></p>'
             , unsafe_allow_html=True)

@@ -19,7 +19,7 @@ text_input = st.text_input(
 #     placeholder=st.session_state.placeholder,
 # )
 if len(text_input) >= 1:
-    if text_input == '2023':
+    if text_input == 'tech2023':
         # st.write("You got a gift NO.01")
         st.markdown(
             '<p class="medium-font-font"><strong style="color:orange">CONGRATS !!! </strong></p>'
@@ -30,7 +30,7 @@ if len(text_input) >= 1:
         st.write('I hope you will get the greatest gift, Good luck !')
         st.image("fireworks.gif")
         st.image("santa.gif")
-    if text_input != '2023':
+    if text_input != 'tech2023':
         st.markdown(
             '<p class="medium-font-font"><strong style="color:red">INCORRECT !!!!!</strong></p>'
             , unsafe_allow_html=True)
